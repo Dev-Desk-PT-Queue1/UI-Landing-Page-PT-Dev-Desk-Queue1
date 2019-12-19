@@ -6,4 +6,10 @@
     wrap: @wrap;
 }
 
-  
+.gridStatus (@gapSize, @useShadow) {
+    display: grid;
+    grid-gap: @gapSize;
+    .if(@useShadow) {
+        @{box-shadow}: @shadow;
+    }
+}  
