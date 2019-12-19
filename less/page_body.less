@@ -1,39 +1,96 @@
 body {
 
-    //Landing Page Styling
+    //Landing Page Styling - small phone (500px max)
     .indexCont {
-        .indexIntro {
-            width: 80%;
-            height: 40%;
-            opacity: 0.7;
-            backdrop-filter: blur(20px);
-            display: block;
+        width: 90%;
+        margin: 0 auto;
+
+        .normalDisplay {
+            display: grid;
+            gap: 1rem;
+            grid-template-areas: 
+                'indexIntro'
+                'basePrice'
+                'proPrice'
+                'betaProg'
+                'faq'
+                'support'
+                'contactUs';
+            width: 90%;
             margin: 0 auto;
-            border-radius: .5rem;
 
-        }
+            .indexIntro {
+                background-color: rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(20px);
+                padding: 2rem .5rem;
+                border-radius: .5rem;
+                grid-area: indexIntro;
 
+                h1 {
+                    text-align: center;
+                }
 
-    .infoCards{
-        width: 80%;
-        .flexStatus (column, flex-between, flex-around, wrap);
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    text-align: center;
+                }
 
+                .fa-4x {
+                    font-size: 4rem;
+                    padding: 1.5rem auto;
+                    // border: 1px black solid;
+                }
 
-        
-        .infoCard {
-            opacity: 0.7;
-            backdrop-filter: blur(20px);
-            text-align: center;
-            border-radius: .5rem;
             }
-        }      
-    .bigCards {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        display: hidden;
+
+
+            
+            .infoCard {
+                background-color: rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(20px);
+                text-align: center;
+                border-radius: .5rem;
+                box-shadow: @shadow;
+                height: minmax(5rem, auto);
+                }
+            
+            .basePrice {
+                grid-area: basePrice;
+            }
+
+            .proPrice {
+                grid-area: proPrice;
+            }
+
+            .betaProg {
+                grid-area: betaProg;
+            }
+
+            .faq {
+                grid-area: faq;
+            }
+
+            .support {
+                grid-area: support;
+            }
+
+            .contactUs {
+                grid-area: contactUs;
+            }
+
+
+
+
+    }
+            
+        .bigCards {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: hidden;
 
 
 
