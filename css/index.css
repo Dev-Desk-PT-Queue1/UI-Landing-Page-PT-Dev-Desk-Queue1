@@ -129,6 +129,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  background-color: #9FC6E7;
 }
 html {
   font-size: 62.5%;
@@ -167,8 +168,33 @@ img {
   max-width: 100%;
   height: auto;
 }
-body {
-  background-image: url('./img/bg_img.png');
+.mainNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  wrap: nowrap;
+  width: 100%;
+  padding: 2rem;
+}
+.mainNav h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.mainNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  wrap: nowrap;
+  font-size: 4rem;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.mainNav ul li a i {
+  border-color: black;
 }
 body .indexCont {
   width: 90%;
@@ -243,8 +269,10 @@ body .indexCont .bigCards {
   height: 100vh;
   position: absolute;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: hidden;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 body footer {
   margin: 2rem auto;
