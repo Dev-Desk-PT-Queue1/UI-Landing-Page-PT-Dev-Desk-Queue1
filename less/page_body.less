@@ -1,29 +1,32 @@
 body {
+    background-image: url('./img/bg_img.png');
 
     //Landing Page Styling - small phone (500px max)
     .indexCont {
         width: 90%;
+        display: block;
         margin: 0 auto;
 
         .normalDisplay {
             display: grid;
             gap: 1rem;
-            grid-template-areas: 
+            margin: 0 auto;
+            grid-template-areas:
                 'indexIntro'
-                'basePrice'
-                'proPrice'
+                'basePrice' 
+                'proPrice' 
                 'betaProg'
-                'faq'
+                'faq' 
                 'support'
                 'contactUs';
-            width: 90%;
-            margin: 0 auto;
 
             .indexIntro {
                 background-color: rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(20px);
                 padding: 2rem .5rem;
                 border-radius: .5rem;
+                box-shadow: @shadow;
+                .flexStatus(column,  center, center, nowrap);
                 grid-area: indexIntro;
 
                 h1 {
@@ -38,7 +41,7 @@ body {
 
                 .fa-4x {
                     font-size: 4rem;
-                    padding: 1.5rem auto;
+                    margin: 2rem auto;
                     // border: 1px black solid;
                 }
 
@@ -49,10 +52,17 @@ body {
             .infoCard {
                 background-color: rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(20px);
-                text-align: center;
+                display: grid;
+                align-items: center;
+                justify-items: center;                
                 border-radius: .5rem;
                 box-shadow: @shadow;
-                height: minmax(5rem, auto);
+                height: 10rem;
+
+                    .price {
+                        font-size: 3rem;
+                        font-weight: bold;
+                    }
                 }
             
             .basePrice {
@@ -97,7 +107,41 @@ body {
 
         }
   
-    }   
+    }
+    
+    footer {
+        margin: 2rem auto;
+        height: 2rem; 
+        text-align: center;
+        padding: .5rem;
+        background: @secondary-font;
+        opacity: 0.7;
+        color: @light-font;
+    }
+
+    @media @tablet {
+        .indexCont .normalDisplay {
+            gap: 2rem;
+            grid-template-areas: 
+            'indexIntro indexIntro'
+            'basePrice proPrice'
+            'betaProg faq'
+            'support contactUs';
+
+        }
+    }
+
+
+    @media @desktop {
+        .indexCont .normalDisplay {
+            gap: 2rem;
+            grid-template-areas: 
+            'indexIntro indexIntro indexIntro'
+            'basePrice proPrice betaProg'
+            'faq support contactUs';
+
+        }
+    }
     
     // About Us Page Styling
     .aboutContainer{
