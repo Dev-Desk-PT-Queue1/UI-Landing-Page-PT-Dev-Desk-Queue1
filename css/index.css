@@ -1,3 +1,4 @@
+@big Mobile (min-width: 375px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,7 +136,10 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  color: #333;
   overflow-x: hidden;
+  max-width: 900px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -188,6 +192,9 @@ body .naviBar div {
   align-self: center;
   justify-content: center;
 }
+body .naviBar div p {
+  font-size: 4rem;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -198,30 +205,77 @@ footer {
   color: #dceaf7;
 }
 body {
-  background-image: url('/assets/img/bg_img.png');
+  background-image: url('/img/bg_img.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-body .indexCont .indexIntro {
-  width: 80%;
-  height: 40%;
-  opacity: 0.7;
-  backdrop-filter: blur(20px);
+body .indexCont {
+  width: 90%;
   display: block;
   margin: 0 auto;
-  border-radius: 0.5rem;
 }
-body .indexCont .infoCards {
-  width: 80%;
+body .indexCont .normalDisplay {
   display: grid;
-  grid-template-columns: 4rem 20rem 2rem 20rem 4rem;
-  grid-template-rows: 20rem 2rem 20rem 2rem 20rem;
+  gap: 1rem;
+  margin: 0 auto;
+  grid-template-areas: 'indexIntro' 'basePrice' 'proPrice' 'betaProg' 'faq' 'support' 'contactUs';
 }
-body .indexCont .infoCard {
-  opacity: 0.7;
+body .indexCont .normalDisplay .indexIntro {
+  background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
-  text-align: center;
+  padding: 2rem 0.5rem;
   border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  wrap: nowrap;
+  grid-area: indexIntro;
+}
+body .indexCont .normalDisplay .indexIntro h1 {
+  text-align: center;
+}
+body .indexCont .normalDisplay .indexIntro h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+body .indexCont .normalDisplay .indexIntro .fa-4x {
+  font-size: 4rem;
+  margin: 2rem auto;
+}
+body .indexCont .normalDisplay .infoCard {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  height: 10rem;
+}
+body .indexCont .normalDisplay .infoCard .price {
+  font-size: 3rem;
+  font-weight: bold;
+}
+body .indexCont .normalDisplay .basePrice {
+  grid-area: basePrice;
+}
+body .indexCont .normalDisplay .proPrice {
+  grid-area: proPrice;
+}
+body .indexCont .normalDisplay .betaProg {
+  grid-area: betaProg;
+}
+body .indexCont .normalDisplay .faq {
+  grid-area: faq;
+}
+body .indexCont .normalDisplay .support {
+  grid-area: support;
+}
+body .indexCont .normalDisplay .contactUs {
+  grid-area: contactUs;
 }
 body .indexCont .bigCards {
   width: 100%;
@@ -230,6 +284,18 @@ body .indexCont .bigCards {
   top: 0;
   background-color: rgba(0, 0, 0, 0.7);
   display: hidden;
+}
+@media (min-width: 500px) {
+  body .indexCont .normalDisplay {
+    gap: 2rem;
+    grid-template-areas: 'indexIntro indexIntro' 'basePrice proPrice' 'betaProg faq' 'support contactUs';
+  }
+}
+@media (min-width: 750px) {
+  body .indexCont .normalDisplay {
+    gap: 2rem;
+    grid-template-areas: 'indexIntro indexIntro indexIntro' 'basePrice proPrice betaProg' 'faq support contactUs';
+  }
 }
 body .aboutContainer {
   font-size: 1.8rem;
@@ -245,19 +311,24 @@ body .aboutContainer .aboutSection {
 body .aboutContainer .aboutSection .aboutCard {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-evenly;
   margin: 3% 0 3%;
 }
 body .aboutContainer .aboutSection .aboutCard img {
   justify-content: flex-start;
   align-items: center;
-  width: 20%;
+  width: 25%;
   margin-right: 10%;
   margin-left: 0;
 }
-body .aboutContainer .aboutSection .aboutCard p {
+body .aboutContainer .aboutSection .aboutCard .cardSection {
   justify-content: flex-end;
-  width: 70%;
+  width: 90%;
   background-color: rgba(226, 226, 226, 0.5);
   padding: 1.5%;
   border-radius: 6px;
+}
+body .aboutContainer .aboutSection .aboutCard .cardSection .icons {
+  margin-top: 5%;
+  width: 120px;
 }
