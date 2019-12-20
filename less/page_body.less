@@ -1,7 +1,5 @@
 body {
-    background-image: url('/img/bg_img.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    .bgImg();
 
     //Landing Page Styling - small phone (500px max)
     .indexCont {
@@ -23,7 +21,7 @@ body {
                 'contactUs';
 
             .indexIntro {
-                background-color: rgba(0, 0, 0, 0.1);
+                background-color: rgba(226, 226, 226, 0.514);
                 backdrop-filter: blur(20px);
                 padding: 2rem .5rem;
                 border-radius: .5rem;
@@ -52,7 +50,7 @@ body {
 
             
             .infoCard {
-                background-color: rgba(0, 0, 0, 0.1);
+                background-color: rgba(226, 226, 226, 0.514);
                 backdrop-filter: blur(20px);
                 display: grid;
                 align-items: center;
@@ -169,7 +167,8 @@ body {
                 .cardSection {
                    justify-content: flex-end; 
                    width: 90%;
-                   background-color: rgba(226, 226, 226, 0.5);
+                   background-color: rgba(226, 226, 226, 0.514);
+                   box-shadow: @shadow;
                    padding: 1.5%;
                    border-radius: 6px;
 
@@ -177,12 +176,6 @@ body {
                        margin-top: 5%;
                        width: 120px;
                    }
-
-                //    filter:blur(1px);
-                //     -o-filter:blur(1px);
-                //     -ms-filter:blur(1px);
-                //     -moz-filter:blur(1px);
-                //     -webkit-filter:blur(1px);
                 }
             }
         }
