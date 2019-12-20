@@ -167,12 +167,26 @@ img {
 body .naviBar {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
   font-size: 2rem;
-  margin: 2% 0 5%;
+  margin: 2% 0 2%;
+  padding: 2%;
+}
+body .naviBar ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 25%;
 }
 body .naviBar a {
   text-decoration: none;
   color: #333;
+}
+body .naviBar div {
+  width: 0 auto;
+  align-self: center;
+  justify-content: center;
 }
 footer {
   display: flex;
