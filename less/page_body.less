@@ -19,9 +19,10 @@ body {
                 'faq' 
                 'support'
                 'contactUs';
+            
 
             .indexIntro {
-                background-color: rgba(226, 226, 226, 0.514);
+                background-color: rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(20px);
                 padding: 2rem .5rem;
                 border-radius: .5rem;
@@ -50,7 +51,7 @@ body {
 
             
             .infoCard {
-                background-color: rgba(226, 226, 226, 0.514);
+                background-color: rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(20px);
                 display: grid;
                 align-items: center;
@@ -99,16 +100,17 @@ body {
             height: 100vh;
             position: absolute;
             top: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            display: hidden;
+            left: 0;
+            z-index: 9999;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
 
-
-
-
+            .bigCard {
+                
+            }
         }
   
     }
-    
 
     @media @tablet {
         .indexCont .normalDisplay {
@@ -132,7 +134,7 @@ body {
             'faq support contactUs';
 
         }
-    } 
+    }
     
     
     // About Us Page Styling

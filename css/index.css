@@ -168,6 +168,34 @@ img {
   max-width: 100%;
   height: auto;
 }
+body .mainNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  wrap: nowrap;
+  width: 100%;
+  padding: 2rem;
+}
+body .mainNav h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+body .mainNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  wrap: nowrap;
+  font-size: 4rem;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+body .mainNav ul li a i {
+  border-color: black;
+}
 body .naviBar {
   display: flex;
   justify-content: center;
@@ -180,7 +208,7 @@ body .naviBar {
 body .naviBar ul {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 25%;
 }
 body .naviBar a {
@@ -221,7 +249,7 @@ body .indexCont .normalDisplay {
   grid-template-areas: 'indexIntro' 'basePrice' 'proPrice' 'betaProg' 'faq' 'support' 'contactUs';
 }
 body .indexCont .normalDisplay .indexIntro {
-  background-color: rgba(226, 226, 226, 0.514);
+  background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   padding: 2rem 0.5rem;
   border-radius: 0.5rem;
@@ -246,7 +274,7 @@ body .indexCont .normalDisplay .indexIntro .fa-4x {
   margin: 2rem auto;
 }
 body .indexCont .normalDisplay .infoCard {
-  background-color: rgba(226, 226, 226, 0.514);
+  background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   display: grid;
   align-items: center;
@@ -282,8 +310,10 @@ body .indexCont .bigCards {
   height: 100vh;
   position: absolute;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: hidden;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 @media (min-width: 500px) {
   body .indexCont .normalDisplay {
