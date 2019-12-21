@@ -205,23 +205,34 @@ body .naviBar {
   margin: 2% 0 2%;
   padding: 2%;
 }
-body .naviBar ul {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  width: 25%;
-}
-body .naviBar a {
-  text-decoration: none;
-  color: #051129;
-}
 body .naviBar div {
   width: 0 auto;
   align-self: center;
   justify-content: center;
+  margin-bottom: 2%;
 }
 body .naviBar div p {
   font-size: 4rem;
+}
+body .naviBar ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 239px;
+  height: 43px;
+  padding: 1%;
+}
+body .naviBar ul a {
+  text-decoration: none;
+  color: #051129;
+  opacity: 0;
+}
+body .naviBar ul span {
+  width: 32px;
+}
+body .naviBar ul:hover a {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
 }
 footer {
   display: flex;
@@ -345,11 +356,17 @@ body .aboutContainer .aboutSection .aboutCard {
   margin: 3% 0 3%;
 }
 body .aboutContainer .aboutSection .aboutCard img {
-  justify-content: flex-start;
-  align-items: center;
-  width: 25%;
-  margin-right: 10%;
-  margin-left: 0;
+  display: none;
+}
+@media (min-width: 500px) {
+  body .aboutContainer .aboutSection .aboutCard img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+    margin-right: 10%;
+    margin-left: 0;
+  }
 }
 body .aboutContainer .aboutSection .aboutCard .cardSection {
   justify-content: flex-end;

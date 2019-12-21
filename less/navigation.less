@@ -1,5 +1,5 @@
 body{
-
+// Landing Page Nav
     .mainNav {
         .flexStatus(column, center, center, nowrap);
         width: 100%;
@@ -24,7 +24,10 @@ body{
             
         }
      }
-    
+
+
+
+    // About Page Nav
     .naviBar{
         display: flex;
         justify-content: center;
@@ -34,26 +37,40 @@ body{
         margin: 2% 0 2%;
         padding: 2%;
 
-        ul {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            width: 25%;
-        }
-
-        a {
-            text-decoration: none;
-            color: rgb(5, 17, 41);
-        }
-
         div {
             width: 0 auto;
             align-self: center;
             justify-content: center;
+            margin-bottom: 2%;
             
             p{
                 font-size: 4rem;
             }
+        }
+
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            width: 239px;
+            height: 43px;
+            padding: 1%;
+
+            a {
+                text-decoration: none;
+                color: rgb(5, 17, 41);  
+                opacity: 0;
+            }
+
+            span {
+                width: 32px;
+            }
+            
+            &:hover a {
+                opacity: 1;
+                transition: opacity 0.5s ease-in;
+            }
+
         }
 
     }
