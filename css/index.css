@@ -129,8 +129,6 @@ table {
 }
 * {
   box-sizing: border-box;
-
-
 }
 html {
   font-size: 62.5%;
@@ -138,9 +136,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-
   color: #051129;
-
   overflow-x: hidden;
   max-width: 900px;
   margin: 0 auto;
@@ -172,45 +168,12 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-body .mainNav {
+body .naviBar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  wrap: nowrap;
-  width: 100%;
-  padding: 2rem;
-}
-
-body .mainNav h1 {
-
-  font-size: 4rem;
-  font-weight: 600;
-  padding-bottom: 1rem;
-}
-
-body .mainNav ul {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  wrap: nowrap;
-  font-size: 4rem;
-  width: 100%;
-  text-decoration: none;
-  color: black;
-}
-
-body .mainNav ul li a i {
-  border-color: black;
-}
-body .naviBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
+  wrap: wrap;
   font-size: 2rem;
   margin: 2% 0 2%;
   padding: 2%;
@@ -226,8 +189,10 @@ body .naviBar div p {
 }
 body .naviBar ul {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  wrap: nowrap;
   width: 239px;
   height: 43px;
   padding: 1%;
@@ -258,7 +223,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 body .indexCont {
   width: 90%;
   display: block;
@@ -337,7 +301,6 @@ body .indexCont .bigCards {
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
-
 @media (min-width: 500px) {
   body .indexCont .normalDisplay {
     gap: 2rem;
@@ -351,14 +314,12 @@ body .indexCont .bigCards {
   }
 }
 body .aboutContainer {
-
   font-size: 1.8rem;
   width: 95%;
 }
 body .aboutContainer .aboutSection {
   display: flex;
   flex-flow: column wrap;
-
   justify-content: center;
   align-content: center;
   margin: 0 5% 0;
