@@ -1,5 +1,7 @@
 body {
-    
+
+    .bgImg();
+
 
     //Landing Page Styling - small phone (500px max)
     .indexCont {
@@ -111,16 +113,7 @@ body {
         }
   
     }
-    
-    footer {
-        margin: 2rem auto;
-        height: 2rem; 
-        text-align: center;
-        padding: .5rem;
-        background: @secondary-font;
-        opacity: 0.7;
-        color: @light-font;
-    }
+
 
     @media @tablet {
         .indexCont .normalDisplay {
@@ -146,16 +139,60 @@ body {
         }
     }
     
+
+    
     // About Us Page Styling
     .aboutContainer{
-        font-size: 1rem;
+        font-size: 1.8rem;
+        width: 95%;
+
 
         .aboutSection{
             display: flex;
             flex-flow: column wrap;
+            justify-content: center;
+            align-content: center;
+            margin: 0 5% 0;
+            
 
             .aboutCard{
-                font-size: 10px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                margin: 3% 0 3%;
+
+                
+
+                img {
+                    display: none;
+
+
+                    @media @tablet {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 25%;
+                        margin-right: 10%;
+                        margin-left: 0;
+                    }
+
+
+                }
+
+                .cardSection {
+                   justify-content: flex-end; 
+                   width: 90%;
+                   background-color: rgba(226, 226, 226, 0.514);
+                   box-shadow: @shadow;
+                   padding: 1.5%;
+                   border-radius: 6px;
+
+                   .icons{
+                       margin-top: 5%;
+                       width: 120px;
+                   }
+                }
+
             }
         }
     }
