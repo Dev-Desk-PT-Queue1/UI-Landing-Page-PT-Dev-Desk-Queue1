@@ -286,15 +286,31 @@ body .indexCont .normalDisplay .proPrice {
 }
 body .indexCont .normalDisplay .betaProg {
   grid-area: betaProg;
+  color: lightgrey;
+}
+body .indexCont .normalDisplay .betaProg:hover {
+  background-color: #00526b;
 }
 body .indexCont .normalDisplay .faq {
   grid-area: faq;
+  color: lightgrey;
+}
+body .indexCont .normalDisplay .faq:hover {
+  background-color: #00526b;
 }
 body .indexCont .normalDisplay .support {
   grid-area: support;
+  color: lightgrey;
+}
+body .indexCont .normalDisplay .support:hover {
+  background-color: #00526b;
 }
 body .indexCont .normalDisplay .contactUs {
   grid-area: contactUs;
+  color: lightgrey;
+}
+body .indexCont .normalDisplay .contactUs:hover {
+  background-color: #00526b;
 }
 body .indexCont .bigCards {
   width: 100%;
@@ -311,6 +327,8 @@ body .indexCont .bigCards .bigCard {
   height: 80vh;
   margin: auto auto;
   padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   position: relative;
   background-color: lightgrey;
   color: black;
@@ -352,11 +370,35 @@ body .indexCont .bigCards #contactUs {
     gap: 2rem;
     grid-template-areas: 'indexIntro indexIntro' 'basePrice proPrice' 'betaProg faq' 'support contactUs';
   }
+  body .indexCont .normalDisplay .betaProg {
+    color: black;
+  }
+  body .indexCont .normalDisplay .betaProg:hover {
+    background-color: #9FC6E7;
+  }
+  body .indexCont .normalDisplay .faq {
+    color: black;
+  }
+  body .indexCont .normalDisplay .faq:hover {
+    background-color: #9FC6E7;
+  }
 }
 @media (min-width: 750px) {
   body .indexCont .normalDisplay {
     gap: 2rem;
     grid-template-areas: 'indexIntro indexIntro indexIntro' 'basePrice proPrice betaProg' 'faq support contactUs';
+  }
+  body .indexCont .normalDisplay .support {
+    color: black;
+  }
+  body .indexCont .normalDisplay .support:hover {
+    background-color: #9FC6E7;
+  }
+  body .indexCont .normalDisplay .contactUs {
+    color: black;
+  }
+  body .indexCont .normalDisplay .contactUs:hover {
+    background-color: #9FC6E7;
   }
 }
 body .aboutContainer {

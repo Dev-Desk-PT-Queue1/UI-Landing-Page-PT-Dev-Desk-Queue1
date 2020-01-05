@@ -83,18 +83,34 @@ body {
 
             .betaProg {
                 grid-area: betaProg;
+                color: @light-font;
+                &:hover {
+                    background-color: @secondary-font;
+                }
             }
 
             .faq {
                 grid-area: faq;
+                color: @light-font;
+                &:hover {
+                    background-color: @secondary-font;
+                }
             }
 
             .support {
                 grid-area: support;
+                color: @light-font;
+                &:hover {
+                    background-color: @secondary-font;
+                }
             }
 
             .contactUs {
                 grid-area: contactUs;
+                color: @light-font;
+                &:hover {
+                    background-color: @secondary-font;
+                }
             }
 
 
@@ -117,6 +133,8 @@ body {
               height: 80vh; 
               margin: auto auto;
               padding: 3rem 2rem;
+              border-radius: .5rem;
+              box-shadow: @shadow;
               position: relative;
               background-color: @light-font;
               color: @main-font;
@@ -175,6 +193,20 @@ body {
             'betaProg faq'
             'support contactUs';
 
+            .betaProg {
+                color: @main-font;
+                &:hover {
+                    background-color: @backingColor;
+                }
+            }
+
+            .faq {
+                color: @main-font;
+                &:hover {
+                    background-color: @backingColor;
+                }
+            }
+
         }
     }
 
@@ -186,6 +218,21 @@ body {
             'indexIntro indexIntro indexIntro'
             'basePrice proPrice betaProg'
             'faq support contactUs';
+
+            .support {
+                color: @main-font;
+                &:hover {
+                    background-color: @backingColor;
+                }
+            }
+
+            .contactUs {
+                color: @main-font;
+                &:hover {
+                    background-color: @backingColor;
+                }
+            }
+
 
         }
     }

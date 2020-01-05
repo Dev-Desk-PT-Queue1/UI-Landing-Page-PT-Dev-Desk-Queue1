@@ -19,7 +19,6 @@ window.onclick = function(event) {
     if (event.target.className  === ".closeBtn") closeDown
 };
 
-
 document.querySelector('.bigCards')
     .addEventListener('click', closeDown);
 
