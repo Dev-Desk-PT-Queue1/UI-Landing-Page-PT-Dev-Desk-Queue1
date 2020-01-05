@@ -268,6 +268,11 @@ body .indexCont .normalDisplay .infoCard {
   border-radius: 0.5rem;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   height: 10rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body .indexCont .normalDisplay .infoCard:hover {
+  background-color: #9FC6E7;
 }
 body .indexCont .normalDisplay .infoCard .price {
   font-size: 3rem;
@@ -281,15 +286,31 @@ body .indexCont .normalDisplay .proPrice {
 }
 body .indexCont .normalDisplay .betaProg {
   grid-area: betaProg;
+  color: lightgrey;
+}
+body .indexCont .normalDisplay .betaProg:hover {
+  background-color: #00526b;
 }
 body .indexCont .normalDisplay .faq {
   grid-area: faq;
+  color: lightgrey;
+}
+body .indexCont .normalDisplay .faq:hover {
+  background-color: #00526b;
 }
 body .indexCont .normalDisplay .support {
   grid-area: support;
+  color: lightgrey;
+}
+body .indexCont .normalDisplay .support:hover {
+  background-color: #00526b;
 }
 body .indexCont .normalDisplay .contactUs {
   grid-area: contactUs;
+  color: lightgrey;
+}
+body .indexCont .normalDisplay .contactUs:hover {
+  background-color: #00526b;
 }
 body .indexCont .bigCards {
   width: 100%;
@@ -298,7 +319,50 @@ body .indexCont .bigCards {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+body .indexCont .bigCards .bigCard {
+  width: 80%;
+  height: 80vh;
+  margin: auto auto;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  position: relative;
+  background-color: lightgrey;
+  color: black;
+}
+body .indexCont .bigCards .bigCard h2 {
+  text-align: center;
+}
+body .indexCont .bigCards .bigCard .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  transform: rotate(45deg);
+  font-weight: bold;
+  font-size: 3rem;
+}
+body .indexCont .bigCards .bigCard .closeBtn:hover {
+  cursor: pointer;
+}
+body .indexCont .bigCards #basePrice {
+  display: none;
+}
+body .indexCont .bigCards #proPrice {
+  display: none;
+}
+body .indexCont .bigCards #betaProg {
+  display: none;
+}
+body .indexCont .bigCards #faq {
+  display: none;
+}
+body .indexCont .bigCards #support {
+  display: none;
+}
+body .indexCont .bigCards #contactUs {
   display: none;
 }
 @media (min-width: 500px) {
@@ -306,11 +370,35 @@ body .indexCont .bigCards {
     gap: 2rem;
     grid-template-areas: 'indexIntro indexIntro' 'basePrice proPrice' 'betaProg faq' 'support contactUs';
   }
+  body .indexCont .normalDisplay .betaProg {
+    color: black;
+  }
+  body .indexCont .normalDisplay .betaProg:hover {
+    background-color: #9FC6E7;
+  }
+  body .indexCont .normalDisplay .faq {
+    color: black;
+  }
+  body .indexCont .normalDisplay .faq:hover {
+    background-color: #9FC6E7;
+  }
 }
 @media (min-width: 750px) {
   body .indexCont .normalDisplay {
     gap: 2rem;
     grid-template-areas: 'indexIntro indexIntro indexIntro' 'basePrice proPrice betaProg' 'faq support contactUs';
+  }
+  body .indexCont .normalDisplay .support {
+    color: black;
+  }
+  body .indexCont .normalDisplay .support:hover {
+    background-color: #9FC6E7;
+  }
+  body .indexCont .normalDisplay .contactUs {
+    color: black;
+  }
+  body .indexCont .normalDisplay .contactUs:hover {
+    background-color: #9FC6E7;
   }
 }
 body .aboutContainer {

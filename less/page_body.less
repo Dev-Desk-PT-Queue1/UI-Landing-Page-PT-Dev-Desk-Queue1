@@ -61,13 +61,18 @@ body {
                 border-radius: .5rem;
                 box-shadow: @shadow;
                 height: 10rem;
+                cursor: pointer;
+                transition: all .3s ease;
+                &:hover {
+                    background-color: @backingColor;
+                }
 
                     .price {
                         font-size: 3rem;
                         font-weight: bold;
                     }
                 }
-            
+        
             .basePrice {
                 grid-area: basePrice;
             }
@@ -78,18 +83,34 @@ body {
 
             .betaProg {
                 grid-area: betaProg;
+                color: @light-font;
+                &:hover {
+                    background-color: @secondary-font;
+                }
             }
 
             .faq {
                 grid-area: faq;
+                color: @light-font;
+                &:hover {
+                    background-color: @secondary-font;
+                }
             }
 
             .support {
                 grid-area: support;
+                color: @light-font;
+                &:hover {
+                    background-color: @secondary-font;
+                }
             }
 
             .contactUs {
                 grid-area: contactUs;
+                color: @light-font;
+                &:hover {
+                    background-color: @secondary-font;
+                }
             }
 
 
@@ -104,12 +125,60 @@ body {
             top: 0;
             left: 0;
             z-index: 9999;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
             display: none;
 
             .bigCard {
-                
+              width: 80%;
+              height: 80vh; 
+              margin: auto auto;
+              padding: 3rem 2rem;
+              border-radius: .5rem;
+              box-shadow: @shadow;
+              position: relative;
+              background-color: @light-font;
+              color: @main-font;
+                h2 {
+                    text-align: center;
+                }
+                .closeBtn {
+                    position: absolute;
+                    top: 0;
+                    right: 1rem;
+                    transform: rotate(45deg);
+                    font-weight: bold;
+                    font-size: 3rem;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                } 
+
             }
+
+            #basePrice {
+                display: none;
+            }
+
+            #proPrice {
+                display: none;
+            }
+
+            #betaProg   {
+                display: none;
+            }
+
+            #faq {
+                display: none;
+            }
+
+            #support {
+                display: none;
+            }
+
+            #contactUs {
+                display: none;
+            }
+
         }
   
     }
@@ -124,6 +193,20 @@ body {
             'betaProg faq'
             'support contactUs';
 
+            .betaProg {
+                color: @main-font;
+                &:hover {
+                    background-color: @backingColor;
+                }
+            }
+
+            .faq {
+                color: @main-font;
+                &:hover {
+                    background-color: @backingColor;
+                }
+            }
+
         }
     }
 
@@ -135,6 +218,21 @@ body {
             'indexIntro indexIntro indexIntro'
             'basePrice proPrice betaProg'
             'faq support contactUs';
+
+            .support {
+                color: @main-font;
+                &:hover {
+                    background-color: @backingColor;
+                }
+            }
+
+            .contactUs {
+                color: @main-font;
+                &:hover {
+                    background-color: @backingColor;
+                }
+            }
+
 
         }
     }
