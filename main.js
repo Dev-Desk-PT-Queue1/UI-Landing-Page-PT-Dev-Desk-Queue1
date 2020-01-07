@@ -21,9 +21,6 @@ window.onclick = function(event) {
     }
 };
 
-// document.querySelector('.bigCards')
-//     .addEventListener('click', closeDown);
-
 document.querySelector('.basePrice')
     .addEventListener('click', function () {
         document.querySelector('.bigCards')
