@@ -136,7 +136,8 @@ body {
               border-radius: .5rem;
               box-shadow: @shadow;
               position: relative;
-              background-color: @light-font;
+              background-color: @backingColor;
+              opacity: 0.75;
               color: @main-font;
                 h2 {
                     text-align: center;
@@ -177,6 +178,57 @@ body {
 
             #contactUs {
                 display: none;
+
+                .contactForm {
+                    display: grid;
+                    gap: 2rem;
+                    grid-template-areas: 
+                        'fName'
+                        'lName'
+                        'company'
+                        'eMail'
+                        'phone'
+                        'comments'
+                        'submit';
+
+                    .formInputs {
+                        margin: 0 auto;
+                    }
+
+                    .fName {
+                        grid-area: fName;
+                    }
+
+                    .lName {
+                        grid-area: lName;
+                    }
+
+                    .company {
+                        grid-area: company;
+                    }
+
+                    .eMail {
+                        grid-area: eMail;
+                    }
+
+                    .phone {
+                        grid-area: phone;
+                    }
+
+                    .comments {
+                        grid-area: comments;
+                    }
+
+                    .submit {
+                        grid-area: submit;
+                        text-align: center;
+
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+
+                }
             }
 
         }

@@ -16,11 +16,13 @@ function closeDown () {
 }
 
 window.onclick = function(event) {
-    if (event.target.className  === ".closeBtn") closeDown
+    if (event.target.className  === "closeBtn") {
+        closeDown();
+    }
 };
 
-document.querySelector('.bigCards')
-    .addEventListener('click', closeDown);
+// document.querySelector('.bigCards')
+//     .addEventListener('click', closeDown);
 
 document.querySelector('.basePrice')
     .addEventListener('click', function () {
