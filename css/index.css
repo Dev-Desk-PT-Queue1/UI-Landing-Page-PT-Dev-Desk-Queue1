@@ -330,7 +330,8 @@ body .indexCont .bigCards .bigCard {
   border-radius: 0.5rem;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   position: relative;
-  background-color: lightgrey;
+  background-color: #9FC6E7;
+  opacity: 0.75;
   color: black;
 }
 body .indexCont .bigCards .bigCard h2 {
@@ -364,6 +365,39 @@ body .indexCont .bigCards #support {
 }
 body .indexCont .bigCards #contactUs {
   display: none;
+}
+body .indexCont .bigCards #contactUs .contactForm {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: 'fName' 'lName' 'company' 'eMail' 'phone' 'comments' 'submit';
+}
+body .indexCont .bigCards #contactUs .contactForm .formInputs {
+  margin: 0 auto;
+}
+body .indexCont .bigCards #contactUs .contactForm .fName {
+  grid-area: fName;
+}
+body .indexCont .bigCards #contactUs .contactForm .lName {
+  grid-area: lName;
+}
+body .indexCont .bigCards #contactUs .contactForm .company {
+  grid-area: company;
+}
+body .indexCont .bigCards #contactUs .contactForm .eMail {
+  grid-area: eMail;
+}
+body .indexCont .bigCards #contactUs .contactForm .phone {
+  grid-area: phone;
+}
+body .indexCont .bigCards #contactUs .contactForm .comments {
+  grid-area: comments;
+}
+body .indexCont .bigCards #contactUs .contactForm .submit {
+  grid-area: submit;
+  text-align: center;
+}
+body .indexCont .bigCards #contactUs .contactForm .submit p {
+  font-size: 1rem;
 }
 @media (min-width: 500px) {
   body .indexCont .normalDisplay {
