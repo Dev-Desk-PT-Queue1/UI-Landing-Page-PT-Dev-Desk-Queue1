@@ -187,6 +187,13 @@ body .naviBar div {
 body .naviBar div p {
   font-size: 4rem;
 }
+body .naviBar div .buttons {
+  display: flex;
+}
+body .naviBar div .buttons a {
+  text-decoration: none;
+  background-color: rgba(226, 226, 226, 0.514);
+}
 body .naviBar ul {
   display: flex;
   flex-direction: row;
@@ -235,7 +242,7 @@ footer {
   margin: 9% 0 0;
   padding: 3% 0 2%;
   background-color: rgba(7, 2, 0, 0.541);
-  color: #dceaf7;
+  color: lightgrey;
 }
 .indexFooter {
   display: block;
@@ -264,6 +271,10 @@ body .indexCont .normalDisplay {
   gap: 1rem;
   margin: 0 auto;
   grid-template-areas: 'indexIntro' 'basePrice' 'proPrice' 'betaProg' 'faq' 'support' 'contactUs';
+}
+body .indexCont .normalDisplay .indexIntroLogo {
+  width: 20%;
+  margin: 3%;
 }
 body .indexCont .normalDisplay .indexIntro {
   background-color: rgba(0, 0, 0, 0.1);

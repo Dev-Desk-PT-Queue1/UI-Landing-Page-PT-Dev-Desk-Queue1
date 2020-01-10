@@ -1,41 +1,8 @@
 
 body{
-// Landing Page Nav
-    // .mainNav {
-    //     .flexStatus(column, center, center, nowrap);
-    //     width: 100%;
-    //     padding: 2rem;
-        
-    //     h1 {
-    //         font-size: 4rem;
-    //         font-weight: 600;
-    //         padding-bottom: 1rem;
-    //     }
-    
-    //     ul {
-    //         .flexStatus(row, space-around, center, nowrap);
-    //         font-size: 4rem;
-    //         width: 100%;
-    //         text-decoration: none;
-    //         color: @main-font;
-    
-    //         li a i {
-    //             border-color: @main-font;
-    //         }
-            
-    //     }
-    //  }
-
-
-
-    // About Page Nav
     //  Using this nav for all pages.
     .naviBar{
         .flexStatus(column, center, center, wrap);
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // flex-flow: column wrap;
         font-size: 2rem;
         margin: 2% 0 2%;
         padding: 2%;
@@ -50,13 +17,19 @@ body{
                 font-size: 4rem;
             }
 
+            .buttons {
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    background-color: @cardColor;
+                }
+            }
+
         }
 
         ul {
             .flexStatus(row, space-evenly, center, nowrap);
-            // display: flex;
-            // flex-flow: row nowrap;
-            // justify-content: space-evenly;
             width: 239px;
             height: 43px;
             padding: 1%;
