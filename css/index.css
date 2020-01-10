@@ -200,14 +200,33 @@ body .naviBar ul {
 body .naviBar ul a {
   text-decoration: none;
   color: #051129;
-  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+@media (min-width: 500px) {
+  body .naviBar ul a {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+  }
+}
+body .naviBar ul:hover a {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
 }
 body .naviBar ul span {
   width: 32px;
-}
-body .naviBar ul:hover a {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
 }
 footer {
   display: flex;
@@ -427,6 +446,19 @@ body .aboutContainer {
   font-size: 1.8rem;
   width: 95%;
   scrollbar-width: thin;
+}
+body .aboutContainer .aboutPageContent .aboutMainContent {
+  margin-bottom: 5%;
+  background-color: rgba(226, 226, 226, 0.514);
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  padding: 1.5%;
+  border-radius: 6px;
+}
+body .aboutContainer .aboutPageContent .aboutTeam {
+  background-color: rgba(226, 226, 226, 0.514);
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  padding: 1.5%;
+  border-radius: 6px;
 }
 body .aboutContainer .aboutSection {
   display: flex;

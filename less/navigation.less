@@ -64,16 +64,25 @@ body{
             a {
                 text-decoration: none;
                 color: rgb(5, 17, 41);  
-                opacity: 0;
+                .hoverAnimation();
+                opacity: 1;
+
+                @media @tablet {
+                    .hoverAnimation();
+                    opacity: 0;
+                }
             }
+
+            &:hover a {
+                .hoverAnimation();
+                opacity: 1;
+
+            }
+
+
 
             span {
                 width: 32px;
-            }
-            
-            &:hover a {
-                opacity: 1;
-                transition: opacity 0.5s ease-in;
             }
 
         }
