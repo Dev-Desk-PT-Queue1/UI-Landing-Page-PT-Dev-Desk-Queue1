@@ -455,6 +455,7 @@ body .aboutContainer .aboutPageContent .aboutMainContent {
   border-radius: 6px;
 }
 body .aboutContainer .aboutPageContent .aboutTeam {
+  margin-bottom: 3%;
   background-color: rgba(226, 226, 226, 0.514);
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   padding: 1.5%;
