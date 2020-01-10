@@ -140,7 +140,6 @@ body {
   overflow-x: hidden;
   max-width: 900px;
   margin: 0 auto;
-  height: 100vh;
 }
 h1,
 h2,
@@ -218,6 +217,18 @@ footer {
   padding: 3% 0 2%;
   background-color: rgba(7, 2, 0, 0.541);
   color: #dceaf7;
+}
+.indexFooter {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  color: lightgrey;
 }
 body {
   background-image: url('/img/bg_img.png');
@@ -387,11 +398,6 @@ body .indexCont .bigCards #contactUs .contactForm .submit {
 }
 body .indexCont .bigCards #contactUs .contactForm .submit p {
   font-size: 1rem;
-}
-body .indexCont footer {
-  bottom: 0;
-  width: 80%;
-  margin: 0 auto;
 }
 @media (min-width: 500px) {
   body .indexCont .normalDisplay {
