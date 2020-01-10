@@ -140,7 +140,6 @@ body {
   overflow-x: hidden;
   max-width: 900px;
   margin: 0 auto;
-  height: 100vh;
 }
 h1,
 h2,
@@ -181,8 +180,8 @@ body .naviBar {
 }
 body .naviBar div {
   width: 0 auto;
-  align-self: center;
-  justify-content: center;
+  align-content: center;
+  justify-content: space-around;
   margin-bottom: 2%;
 }
 body .naviBar div p {
@@ -218,6 +217,18 @@ footer {
   padding: 3% 0 2%;
   background-color: rgba(7, 2, 0, 0.541);
   color: #dceaf7;
+}
+.indexFooter {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  color: lightgrey;
 }
 body {
   background-image: url('/img/bg_img.png');
@@ -388,11 +399,6 @@ body .indexCont .bigCards #contactUs .contactForm .submit {
 body .indexCont .bigCards #contactUs .contactForm .submit p {
   font-size: 1rem;
 }
-body .indexCont footer {
-  bottom: 0;
-  width: 80%;
-  margin: 0 auto;
-}
 @media (min-width: 500px) {
   body .indexCont .normalDisplay {
     gap: 2rem;
@@ -420,6 +426,7 @@ body .indexCont footer {
 body .aboutContainer {
   font-size: 1.8rem;
   width: 95%;
+  scrollbar-width: thin;
 }
 body .aboutContainer .aboutSection {
   display: flex;
@@ -442,8 +449,8 @@ body .aboutContainer .aboutSection .aboutCard img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 25%;
-    margin-right: 10%;
+    width: 32%;
+    margin-right: 6%;
     margin-left: 0;
   }
 }
@@ -457,5 +464,6 @@ body .aboutContainer .aboutSection .aboutCard .cardSection {
 }
 body .aboutContainer .aboutSection .aboutCard .cardSection .icons {
   margin-top: 5%;
+  margin-bottom: 3%;
   width: 120px;
 }
